@@ -1,11 +1,12 @@
 {
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "name": "portfolio",
+  "description": "Alint's Portfolio",
   "version": "0.0.25",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Alint Antony",
   "license": "MIT",
-  "starter-name": "gatsby-starter-portfolio-cara",
+  "starter-name": "Alint's Portfolio",
+  "homepage": "http://Funkyjukebox.github.io/portfolio",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -13,7 +14,9 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "predeploy": "npm run build",
+  	"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.1.1",
@@ -22,10 +25,12 @@
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-netlify": "^2.1.6",
     "gatsby-plugin-offline": "^2.2.7",
+    "gatsby-plugin-typescript": "^2.2.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "gh-pages": "^2.2.0"
   }
 }
